@@ -87,6 +87,12 @@ export default function DashboardClient({ docsList }: { docsList: any }) {
                   onClick={() => router.push(`/document/${doc.id}`)}
                   className="flex gap-4"
                 >
+                  <button
+                    onClick={() => ingestPdf(doc.fileUrl, doc.fileName)}
+                    className="flex gap-4"
+                  >
+                    <span>Vectorize PDF</span>
+                  </button>
                   <DocIcon />
                   <span>{doc.fileName}</span>
                 </button>

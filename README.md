@@ -1,5 +1,7 @@
 ## Personal Setup
 - upload PDF to ByteScale, get its details and manually insert all fields into DB table "Document" or will throw error when opening dashboard
+- make sure Supabase Instance is running
+- check PDF's corresponding vectors are in Pinecone
 
 ## Tech Stack
 
