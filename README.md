@@ -1,22 +1,5 @@
-<a href="https://www.pdftochat.com/">
-  <img alt="PDFToChat – Chat with your PDFs in seconds." src="./public/og-image.png">
-  <h1 align="center">PDFToChat</h1>
-</a>
-
-<p align="center">
-  Chat with your PDFs in seconds. Powered by Together AI and Pinecone.
-</p>
-
-<p align="center">
-  <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#common-errors"><strong>Common Errors</strong></a>
-  ·
-  <a href="#credits"><strong>Credits</strong></a>
-  ·
-  <a href="#future-tasks"><strong>Future Tasks</strong></a>
-</p>
-<br/>
+## Personal Setup
+- upload PDF to ByteScale, get its details and manually insert all fields into DB table "Document" or will throw error when opening dashboard
 
 ## Tech Stack
 
@@ -50,13 +33,6 @@ You will also need to prepare your database schema by running `npx prisma db pus
 - Check that you've created an `.env` file that contains your valid (and working) API keys, environment and index name.
 - Check that you've set the vector dimensions to `768` and that `index` matched your specified field in the `.env variable`.
 - Check that you've added a credit card on Together AI if you're hitting rate limiting issues due to the free tier
-
-## Credits
-
-- [Youssef](https://twitter.com/YoussefUiUx) for the design of the app
-- [Mayo](https://twitter.com/mayowaoshin) for the original RAG repo and inspiration
-- [Jacob](https://twitter.com/Hacubu) for the LangChain help
-- Together AI, Bytescale, Pinecone, and Clerk for sponsoring
 
 ## Future tasks
 
