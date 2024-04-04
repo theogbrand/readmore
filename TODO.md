@@ -19,3 +19,13 @@
 - try Cohere Embeddings + Reranker + Command (LLM)
 - Domain-specific Embeddings Finetune (refer to BAAI + FlagOpen/FlagEmbedding[https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding/README.md])
 - Custom Tokenizer (from scratch like SentencePiece or possibly extending c100k GPT4)
+
+
+# Retrieval (for QnA) TODO: 
+## Note: optimise signal:noise ratio (smaller chunks have higher likelihood of being matched semantically!!)
+1. MultiQuery -> gen 3 queries from original query to return more holistic docs
+2. Agentic Chunking -> Proposition method with PDF(Doc) for Text splitting ONLY + Use AgenticChunker to determine a "semantic chunk" instead of cluster chunk (more explicit than clustering method) ==> powerful when chunk summary can be updated when new Proposition is added to it
+3. Multi-Vector -> when storing chunk, store along with summary of it. VSS on summary, return raw text. (hence multi-vector)
+4. for Hypothetical Questions, when Messages stored as KB, generate hypothetical qns using LLM as vector to search on, then return actual KB message as multi-vector VSS
+4. Parent Document Retriever (HierarchicalNodeParser in LI) or like exploding window method
+5. (maybe?) Graph based retrieval
