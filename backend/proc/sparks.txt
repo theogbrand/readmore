@@ -3653,8 +3653,8 @@ If the human annotator was not allowed to pick “neither” or “none”, then
 what Judge GPT-4 chooses (the row “ Human (constrained) ” in Table 6).
 8We do note that the humans performing this task could be biased based on their own experiences and were not checked for
 inter-rater agreement; the ﬁndings may change factoring these considerations as well.
-55
-8 Limitations of autoregressive architecture highlighted by GPT4
+
+8 Limitations of GPT4 Arch
 As witnessed in the previous sections, GPT-4 demonstrates impressive capabilities in a wide range of tasks,
 such as reasoning, content generation, problem solving, and more. However, as we will show in this section,
 the model also has several substantial ﬂaws, some of which seem to be inherent to the next-word prediction
@@ -3908,7 +3908,7 @@ uses the fast-thinking component as a subroutine together with working memory an
 scheme. We note that a similar argument was made by LeCun in [LeC22], where a diﬀerent architecture is
 proposed to overcome these limitations.
 55
-9 Societal inﬂuences
+9 Societal Influences
 Uses of GPT-4 and its successors will no doubt have signiﬁcant social and societal inﬂuences. Uncertainties
 about potential positive and negative impacts cannot be known in advance given the uncertainties about the
 use cases and applications that will be created, and the practices that will be established within and across
