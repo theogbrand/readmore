@@ -317,6 +317,7 @@ Pdrop= 0.1.
 Label Smoothing During training, we employed label smoothing of value ϵls= 0.1[36]. This
 hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
 6 Results
+
 6.1 Machine Translation
 On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big)
 in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0
